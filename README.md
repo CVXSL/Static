@@ -5,7 +5,8 @@
 <!--- <img src="https://img.shields.io/badge/dynamic/json.svg?label=Status&style=for-the-badge&url=https%3A%2F%2Fdiscord.bots.gg%2Fapi%2Fv1%2Fbots%2F889720019049660479&query=%24.status&colorB=7289DA" /> --->
 
 <p align='center'>
-  Static is an all-purpose discord bot with multiple functionalities.
+  <!---Static is an all-purpose discord bot with multiple functionalities.--->
+  *Coming Soon!*
 </p>
 
 
