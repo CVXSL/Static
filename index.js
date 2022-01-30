@@ -86,30 +86,6 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-//const updateInfo = " "
-// THIS IS THE STATUS
-client.on("ready", () => {
-console.log(`Logged in as ${client.user.tag} :)\nUpdated to ${update}`);
-})
-client.on("ready", () => {
-   // Status list
-   const activities = [
-    ` `,
-    `In ${client.guilds.cache.size} Servers!`,
-    `With ${client.users.cache.size} Users!`,
-    `${update}`
-//    `SHARD: ${data.shardId}`
-];
-    
-  // run every 10 seconds    
-  setInterval(() => {
-    // generate random number between 1 and list length.
-    const randomIndex = Math.floor(Math.random() * (activities.length - 1) + 1);
-    const newActivity = activities[randomIndex];
-    client.user.setActivity(newActivity);
-  }, 10000);
-});
-
 // Login to Discord with your bot's token
 //client.login(TOKEN);
 client.login(process.env.token);
