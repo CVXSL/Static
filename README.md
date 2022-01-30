@@ -6,7 +6,7 @@
 
 <p align='center'>
   Static is an all-purpose discord bot with multiple functionalities.
-</p
+</p>
 
 
 <!--- <img src="https://www.cvxsl.xyz" /> --->
