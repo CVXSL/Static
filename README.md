@@ -6,7 +6,7 @@
 
 <p align='center' >
   <!---Static is an all-purpose discord bot with multiple functionalities.--->
-  <span class="emphasized">Coming Soon!</span>
+  Coming Soon!
 </p>
 
 
