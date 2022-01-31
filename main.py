@@ -20,7 +20,7 @@ bot = commands.Bot(
 async def on_ready():
     await bot.change_presence(activity=discord.Game("Music"))
     bot.vc = await bot.get_channel(937540353878261810).connect()
-    bot.vc.play(discord.FFmpegOpusAudio('song.mp3'))
+    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
     print("Ready!")
 
     while True:
