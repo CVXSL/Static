@@ -22,4 +22,9 @@ async def on_ready():
     bot.vc.play(discord.FFmpegOpusAudio('song.mp3'))
     print("Ready!")
 
+    while True:
+            await asyncio.sleep(600)
+            bot.vc = await bot.get_channel(937540353878261810).connect()
+            bot.vc.play(discord.FFmpegOpusAudio('song.mp3'))
+
 bot.run(os.getenv("token"))
