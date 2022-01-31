@@ -24,7 +24,7 @@ async def on_ready():
     print("Ready!")
 
     while True:
-#           bot.vc = await bot.get_channel(937540353878261810).connect()
+            bot.vc = await bot.get_channel(937540353878261810).connect()
             bot.vc.play(discord.FFmpegOpusAudio('Promiscuous.mp3'))
             await asyncio.sleep(245)
             bot.vc.play(discord.FFmpegOpusAudio('Last Friday Night.mp3'))
