@@ -23,6 +23,8 @@ async def on_ready():
 #    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
     print("Ready!")
 
+channel = bot.get_channel(937586830914756639)
+
     while True:
 #            bot.vc = await bot.get_channel(937540353878261810).connect()
 #            bot.vc.play(discord.FFmpegOpusAudio('Promiscuous.mp3'))
@@ -32,6 +34,7 @@ async def on_ready():
 #            bot.vc.play(discord.FFmpegOpusAudio('Give Me Everything.mp3'))
 #            await asyncio.sleep(249)
             bot.vc.play(discord.FFmpegOpusAudio('Toxic.mp3'))
+            await channel.send("**🔥┃Now Playing Toxic by Britney Spears**")
             await asyncio.sleep(203)
 
 bot.run(os.getenv("token"))
