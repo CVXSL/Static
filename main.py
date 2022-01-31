@@ -23,9 +23,9 @@ async def on_ready():
 #    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
     print("Ready!")
 
-    channel = bot.get_channel(937586830914756639)
-
     while True:
+            channel = bot.get_channel(937586830914756639
+
             bot.vc.play(discord.FFmpegOpusAudio('12am.mp3'))
             await channel.send("**🔮┃Now Playing 12am Lofi!**")
             await asyncio.sleep(3783)
