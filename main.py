@@ -19,13 +19,19 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     await bot.change_presence(activity=discord.Game("Music"))
-    bot.vc = await bot.get_channel(937540353878261810).connect()
-    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
+#    bot.vc = await bot.get_channel(937540353878261810).connect()
+#    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
     print("Ready!")
 
     while True:
-            await asyncio.sleep(33)
-#            bot.vc = await bot.get_channel(937540353878261810).connect()
-            bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
+#           bot.vc = await bot.get_channel(937540353878261810).connect()
+            bot.vc.play(discord.FFmpegOpusAudio('Promiscuous.mp3'))
+            await asyncio.sleep(245)
+            bot.vc.play(discord.FFmpegOpusAudio('Last Friday Night.mp3'))
+            await asyncio.sleep(234)
+            bot.vc.play(discord.FFmpegOpusAudio('Give Me Everything.mp3'))
+            await asyncio.sleep(249)
+            bot.vc.play(discord.FFmpegOpusAudio('Toxic.mp3'))
+            await asyncio.sleep(203)
 
 bot.run(os.getenv("token"))
