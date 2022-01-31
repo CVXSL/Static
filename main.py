@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+import asyncio
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -23,7 +24,7 @@ async def on_ready():
     print("Ready!")
 
     while True:
-            await async.sleep(600)
+            await asyncio.sleep(600)
             bot.vc = await bot.get_channel(937540353878261810).connect()
             bot.vc.play(discord.FFmpegOpusAudio('song.mp3'))
 
