@@ -19,7 +19,7 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     await bot.change_presence(activity=discord.Game("Music"))
-    bot.vc = await bot.get_channel(937592731579080755).connect()
+#    bot.vc = await bot.get_channel(937592731579080755).connect()
     bot.vc = await bot.get_channel(937964267481747486).connect()
 #    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
     print("Ready!")
@@ -28,7 +28,7 @@ async def on_ready():
             channel = bot.get_channel(937586830914756639)
 
             bot.vc.play(discord.FFmpegOpusAudio('12am.mp3'))
-            await channel.send("**🔮┃Now Playing 12am Lofi!**")
+#            await channel.send("**🔮┃Now Playing 12am Lofi!**")
             await asyncio.sleep(3783)
 #            bot.vc.play(discord.FFmpegOpusAudio('1am.mp3'))
 #            await channel.send("**🔮┃Now Playing 1am Lofi!**")
