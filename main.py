@@ -18,7 +18,7 @@ bot = commands.Bot(
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game("Music"))
+    await bot.change_presence(activity=discord.Game("CHICC BIRTHDAY JAMS"))
 #    bot.vc = await bot.get_channel(937592731579080755).connect()
     bot.vc = await bot.get_channel(937964267481747486).connect()
 #    bot.vc.play(discord.FFmpegOpusAudio('song2.mp3'))
